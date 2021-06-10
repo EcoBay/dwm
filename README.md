@@ -1,16 +1,13 @@
 # DWM - dynamic window manager
----
-
-dwm is an extremely fast, small, and dynamic window manager for X.
+This is EcoBay's fork of DWM with some additional pathces.
+DWM is an extremely fast, small, and dynamic window manager for X.
 
 
 ## Requirements
-___
 In order to build dwm you need the Xlib header files.
 
 
 ## Installation
-___
 Edit config.mk to match your local setup (dwm is installed into
 the `/usr/local` namespace by default).
 
@@ -22,7 +19,6 @@ make clean install
 ```
 
 ## Running dwm
-___
 Add the following line to your .xinitrc to start dwm using startx:
 
 ```bash
@@ -51,6 +47,5 @@ exec dwm
 
 
 ## Configuration
-___
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
