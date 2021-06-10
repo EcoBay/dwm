@@ -1,5 +1,5 @@
 # DWM - dynamic window manager
-This is EcoBay's fork of DWM with some additional pathces.
+This is EcoBay's fork of DWM with some additional patches.
 DWM is an extremely fast, small, and dynamic window manager for X.
 
 
