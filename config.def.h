@@ -5,7 +5,7 @@ static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int focusonwheel       = 0;
 static const int swallowfloating    = 0;        /* 1 means swallow floating windows by defalt */
-static const unsigned int gapp      = 40;       /* horiz inner gap between windows */
+static const unsigned int gapp      = 30;       /* horiz inner gap between windows */
 static const unsigned int gapx      = 2 * gapp;
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -16,15 +16,14 @@ static const char *fonts[]          = {
     "Symbola:size=10",
 };
 static const char dmenufont[]       = "Roboto Mono:size=10";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#555555";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
 static const char *colors[][3]      = {
-	[SchemeNorm] = { col_gray4, "#041d3b",  "#00002e" },
-	[SchemeSel]  = { col_gray4, "#190039",  "#bbbbff" },
-    [SchemeOcc]  = { "#8a71aa", "#fdc511",  "#190039" }
+	[SchemeNorm] = {"#927374", "#282828", "#e2d3ba"},
+	[SchemeSel]  = {"#fe8019", "#928374", "#d65d0e"},
+	[SchemeOcc] = {"#927374", "#282828", "#282828"},
+
+    [255] = {0, 0, 0},
+
+	{"#d65d0e", "#282828", "#e2d3ba"},
 };
 
 /* tagging */
@@ -67,7 +66,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-/* static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", "#00001a", "-nf", col_gray3, "-sb", "#370255", "-sf", col_gray4, NULL }; */
+/* static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", "#282828", "-nf",  "#928374", "-sb", "#3c3836", "-sf", "#a89984", NULL }; */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, NULL };
 
 static Key keys[] = {
