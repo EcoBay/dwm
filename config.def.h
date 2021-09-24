@@ -17,7 +17,7 @@ static const char *fonts[]          = {
 };
 static const char dmenufont[]       = "Roboto Mono:size=10";
 static const char *colors[][3]      = {
-	[SchemeNorm] = {"#927374", "#282828", "#e2d3ba"},
+	[SchemeNorm] = {"#ebdbb2", "#282828", "#e2d3ba"},
 	[SchemeSel]  = {"#fe8019", "#928374", "#d65d0e"},
 	[SchemeOcc] = {"#927374", "#282828", "#282828"},
 
