@@ -9,10 +9,11 @@ static const unsigned int gapp      = 30;       /* horiz inner gap between windo
 static const unsigned int gapx      = 2 * gapp;
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
+static const int padding            = -1;
 static const char *fonts[]          = {
-    "Font Awesome 5 Free Solid:size=9",
-    "Font Awesome 5 Free Regular:size=9",
     "Roboto Mono:size=10",
+    "Font Awesome 5 Pro Solid:size=9",
+    //"Font Awesome 5 Pro Regular:size=9",
     "Symbola:size=10",
 };
 static const char dmenufont[]       = "Roboto Mono:size=10";
